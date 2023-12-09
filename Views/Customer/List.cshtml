@@ -1,0 +1,22 @@
+
+@model IList<MvC5Course.Models.Customer>
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.Count == 0)
+{
+    <text>No Customer found </text>
+}
+else
+{
+<ul>
+    @foreach(var customer in @Model)
+    {
+        <l1>@customer.Name</l1>
+    }
+    
+</ul>
+}
